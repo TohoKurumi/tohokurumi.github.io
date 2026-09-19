@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HI</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: #ffffff;
+      --text: #24292f;
+      --muted: #57606a;
+      --link: #0969da;
+      --border: #d0d7de;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    .profile {
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 1px var(--border);
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: 28px;
+    }
+
+    .bio {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .links a {
+      color: var(--link);
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 14px;
+      background: #fff;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      background: var(--link);
+      color: #fff;
+      border-color: var(--link);
+    }
+
+    .posts {
+      margin-top: 32px;
+    }
+
+    .posts h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .post-list li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      transition: 0.2s;
+    }
+
+    .post-list li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .post-list a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    .post-list a:hover {
+      color: var(--link);
+    }
+
+    .post-meta {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="profile">
+      <!-- 替换成头像：可以放 avatar.jpg 到同一目录，也可以换成网络图片 URL -->
+      <img class="avatar" src="https://q1.qlogo.cn/g?b=qq&nk=2896852839&s=640">
+
+      <h1>TouhouKurumi</h1>
+      <p class="bio">你好。</p>
+
+      <nav class="links">
+        <a href="https://github.com/Tohokurumi" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:gyoenghoaidiak@qq.com">Email</a>
+        <a href="about.html">关于我</a>
+      </nav>
+    </header>
+
+    <main class="posts">
+      <h2>文章</h2>
+      <ul class="post-list">
+        <li>
+          <a href="posts/hello-world.html">你好，世界</a>
+          <span class="post-meta">2026-09-19 · 第一篇博客</span>
+        </li>
+        <li>
+          <a href="posts/github-pages.html">使用 GitHub Pages 搭建博客</a>
+          <span class="post-meta">2026-09-18 · 教程</span>
+        </li>
+        <li>
+          <a href="https://example.com" target="_blank" rel="noopener">外部链接示例</a>
+          <span class="post-meta">2026-09-17 · 分享</span>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      © 2026 TouhouKurumi· 由 GitHub Pages 托管
+    </footer>
+  </div>
+</body>
+</html>
