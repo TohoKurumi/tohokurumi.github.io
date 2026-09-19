@@ -118,30 +118,11 @@
   <div class="container">
     <div class="card">
       <h1>关于我</h1>
-
-      <div class="links">
-        <a href="https://steamcommunity.com/id/ImAtTheCentreOfEverything/" target="_blank" rel="noopener">Steam</a>
-      </div>
-
-      <div class="copy-box">
-        <input id="copyText" value="2896852839" readonly>
-        <button onclick="copyText()">QQ:2896852839</button>
-      </div>
-
-      <a class="back" href="index.html">← 返回首页</a>
+        <span>
+          QQ:2896852839
+          Steam:1263959787
+        </span>
     </div>
   </div>
-
-  <script>
-    function copyText() {
-      const input = document.getElementById('copyText');
-      input.select();
-      navigator.clipboard.writeText(input.value).then(() => {
-        const btn = event.target;
-        btn.textContent = '已复制';
-        setTimeout(() => btn.textContent = '复制', 1500);
-      });
-    }
-  </script>
 </body>
 </html>
